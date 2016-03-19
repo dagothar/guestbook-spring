@@ -1,8 +1,11 @@
 package gb;
 
 public class Entry {
-  private final int id;
-  private final String message;
+  private int id;
+  private String message;
+  
+  public Entry() {
+  }
   
   public Entry(int id, String message) {
     this.id = id;
@@ -13,8 +16,16 @@ public class Entry {
     return id;
   }
   
+  public void setId(int id) {
+    this.id = id;
+  }
+  
   public String getMessage() {
     return message;
+  }
+  
+  public void setMessage(String message) {
+    this.message = message;
   }
   
   @Override

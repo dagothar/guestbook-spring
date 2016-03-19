@@ -19,6 +19,19 @@
 	
     <div class="container" ng-controller="mainController">
       <div class="row">
+				<div class="col-md-12">
+					<div class="input-group">
+						<input type="text" id="newEntryMessage" class="form-control" value="" ng-model="newEntryMessage" placeholder="Leave a message"/>
+						<span class="input-group-btn">
+							<button class="btn btn-success" type="button" ng-click="addNewEntry()">Add new entry</button>
+						</span>
+					</div>
+				</div>
+			</div>
+      
+      <p></p>
+      
+      <div class="row">
         <ul class="list-group row">
           <li class="list-group-item active text-center center-block">
             Previous entries:

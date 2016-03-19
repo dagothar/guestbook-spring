@@ -10,6 +10,10 @@ angular.module('guestbookSpring')
           .then(function(response) {
             return response.data;
           });
+      },
+      
+      addEntry: function(entry) {
+        return $http.put('/entries', entry);
       }
     };
   }]);

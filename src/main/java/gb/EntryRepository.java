@@ -28,4 +28,10 @@ public class EntryRepository {
     return entries;
   }
   
+  public void addEntry(Entry entry) {
+    String sql = "INSERT INTO Entries(message) VALUES(?)";
+    
+    jdbcTemplate.update(sql, new Object[] { entry.getMessage() });
+  }
+  
 };
