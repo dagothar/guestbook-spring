@@ -1,0 +1,1 @@
+CREATE TABLE Entries(id SERIAL, message VARCHAR(255));
