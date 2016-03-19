@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RestController
 public class TestController {
   
-  public static String message = "Hello!";
+  public static String message = "Hello world!";
   
   @RequestMapping("/test")
   public String test() {
