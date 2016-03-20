@@ -28,24 +28,16 @@
                         <label for="comment">Your name:</label>
                         <input type="text" class="form-control" id="newEntryAuthor" ng-model="newEntryAuthor" placeholder="Sign here"/>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-btn">
-                            <button class="btn btn-success" type="button" ng-click="addNewEntry()">Add new entry</button>
-                        </span>
-                    </div>
+                    <button class="btn btn-success" type="button" ng-click="addNewEntry()">Add new entry</button>
                 </div>
             </div>
 
-            <p></p>
-
             <div class="row">
-                <ul class="list-group row">
-                    <li class="list-group-item active text-center center-block">
-                        Previous entries:
-                    </li>
-
+                <div class="col-md-12">
+                    <hr/>
+                    <h3>Previous entries:</h3>
                     <entry ng-repeat="entry in entries"></task>
-                </ul>
+                </div>
             </div>
         </div>
 
