@@ -1,3 +1,7 @@
 <li class="list-group-item">
-  #{{entry.id}} {{entry.message}}
+    <h4>#{{entry.id}}</h4>
+    <blockquote>
+        <p>{{entry.message}}</p>
+        <footer>{{entry.author}} @{{entry.dateTime}}</footer>
+    </blockquote>
 </li>

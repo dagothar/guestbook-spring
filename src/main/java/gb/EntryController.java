@@ -23,6 +23,11 @@ public class EntryController {
   EntryRepository entryRepository;
 
   @RequestMapping(method = RequestMethod.GET)
+  public List<Entry> getAllEntries() {
+    return entryRepository.findAll();
+  }
+
+  @RequestMapping(method = RequestMethod.GET, params = {"from_id", "to_id"})
   public List<Entry> getEntriesForIdsBetween(@RequestParam(value = "from_id", defaultValue = "0") Long from, @RequestParam(value = "to_id", defaultValue = "9999") Long to) {
     return entryRepository.findForIdsBetween(from, to);
   }
