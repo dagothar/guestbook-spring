@@ -6,7 +6,7 @@ public class Entry {
 
   private int id;
 
-  @NotNull(message = "Message cannot be empty!")
+  @Size(min = 1, max = 255, message = "Message cannot be empty!")
   private String message;
 
   public Entry() {

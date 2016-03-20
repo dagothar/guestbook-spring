@@ -32,8 +32,8 @@ public class EntryController {
 
   @ExceptionHandler
   @ResponseStatus(HttpStatus.BAD_REQUEST)
-  public String handleException(MethodArgumentNotValidException exception) {
-    return "error";
+  public ApiError handleException(MethodArgumentNotValidException exception) {
+    return new ApiError("error");
   }
 
 };
